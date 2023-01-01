@@ -25,6 +25,11 @@ const Layout = ({ children }) => {
 
   return (
     <div className="page-wrapper">
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2313784547480715"
+        crossorigin="anonymous"
+      ></script>
       <PageHeader siteTitle={title || `Title`} />
       <main className="page-content">{children}</main>
       <PageFooter
