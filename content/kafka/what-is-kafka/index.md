@@ -19,7 +19,7 @@ categories: kafka
 
 카프카는 대용량 데이터를 수집하고 이를 사용자들이 실시간 스트림으로 소비할 수 있게 만들어주는 일종의 중추 신경으로 동작한다고 볼 수 있다.
 
-![img](C:\Users\mon22\Desktop\sangham-blog\content\kafka\what-is-kafka\kafka_architecture.png)
+![img](./kafka_architecture.png)
 
 
 
@@ -37,7 +37,7 @@ categories: kafka
 
 ## 3.카프카의 구성요소와 동작
 
-![img](C:\Users\mon22\Desktop\sangham-blog\content\kafka\what-is-kafka\253BF244550914E21A)
+![img](./kafka-structure.png)
 
 카프카는 발행-구동(pub-sub) 구조를 기반으로 동작하며 크게 Producer, Consumer, Broker로 구성되어 있다.
 
@@ -74,4 +74,6 @@ categories: kafka
 #### 4. 고가용성
 
 클러스터로 이루어진 카프카는 데이터의 복제(replication)를 통해 고가용성의 특징을 갖고 있다. 프로듀서로부터 전송받은 데이터를 여러 브로커 중 1대의 브로커에만 저장하는 것이 아니라 또 다른 브로커에도 저장한다. 한 브로커에 장애가 발생하더라도 복제된 데이터가 나머지 브로커에 저장되어 있으므로 저장된 데이터를 기준으로 지속적으로 데이터 처리가 가능하다. 
+
+
 
