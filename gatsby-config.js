@@ -26,17 +26,19 @@ module.exports = {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{ userAgent: '*' }],
+            policy: [{ userAgent: '*', allow: ['/'] }],
+            sitemap: 'https://sangham-blog.netlify.app/sitemap.xml',
+            host: 'https://sangham-blog.netlify.app/',
           },
           'branch-deploy': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null,
+            policy: [{ userAgent: '*', allow: ['/'] }],
+            sitemap: 'https://sangham-blog.netlify.app/sitemap.xml',
+            host: 'https://sangham-blog.netlify.app/',
           },
           'deploy-preview': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null,
+            policy: [{ userAgent: '*', allow: ['/'] }],
+            sitemap: 'https://sangham-blog.netlify.app/sitemap.xml',
+            host: 'https://sangham-blog.netlify.app/',
           },
         },
       },
